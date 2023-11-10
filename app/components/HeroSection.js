@@ -22,7 +22,9 @@ export default function HeroSection() {
         'A Horticulturist',
         2000,
         'A Gamer',
-        2000
+        2000,
+        'A Snowboarder',
+        2000,
       ]}
       wrapper="span"
       speed={50}
