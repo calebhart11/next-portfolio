@@ -45,7 +45,7 @@ const projectsData = [
         title: "Pokedex",
         description: "A customized pokedex application leveraging data from the pokeapi.",
         image: "images/projects/pokedex.png",
-        tag: ["All", "Web"],
+        tag: ["All",],
         gitUrl: "https://github.com/calebhart11/Pokedex-App",
         previewUrl: "https://pokedex-yoqt.onrender.com/pokemon",
     },
@@ -68,8 +68,7 @@ const ProjectsSection = () => {
         <ProjectTag onClick={handleTagChange} name='Mobile' isSelected={tag === "Mobile"} />
 
 
-        {/* <button className='rounded-full border-2 px-6 py-3 text-xl bg-gradient-to-br from-blue-500 via-emerald-500 to bg-pink-500 hover:bg-purple-400 text-black hover:text-white'>All</button>
-        <button className='px-1 py-1  text-xl rounded-full bg-gradient-to-br from-blue-500 via-emerald-500 to-pink-500 hover:bg-slate-800 hover:border-white text-white '><span className='block bg-[#121212] hover:bg-slate-800  rounded-full px-5 py-2'>Web</span></button> */}
+
       </div>
       <div className='grid md:grid-cols-3 gap-8 md:gap-12'>{filteredProjects.map((project) => <ProjectCard key={project.id} title={project.title} description={project.description} imgUrl={project.image} gitUrl={project.gitUrl} previewUrl={project.previewUrl}/>)}</div>
     </div>

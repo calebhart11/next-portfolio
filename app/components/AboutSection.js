@@ -78,10 +78,6 @@ const AboutSection = () => {
               <TabButton selectTab={() =>  handleTabChange("skills")} active={tab === "skills"} >Skills{''}</TabButton>
               <TabButton selectTab={() =>  handleTabChange("education")} active={tab === "education"}>Education{''}</TabButton>
               <TabButton selectTab={() =>  handleTabChange("certifications")} active={tab === "certifications"}>Certifications{''}</TabButton>
-{/* 
-                <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-emerald-500 to bg-pink-600 mr-3 hover:text-white'>Skills</span>
-                <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-emerald-500 to bg-pink-600  hover:text-white'>Education</span>
-                <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-emerald-500 to bg-pink-600 ml-3 hover:text-white'>Experience</span> */}
             </div>
             <div  className='mt-8'>{TAB_DATA.find((t) => t.id === tab).content}</div>
 
