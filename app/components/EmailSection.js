@@ -26,7 +26,7 @@ function EmailSection() {
     const response = await fetch(endpoint, options)
     const resData = await response.json()
     if (resData.status === 200) {
-      console.log('Message sent.')
+      console.log('Message sent.')  
       setEmailSubmitted(true)
     }
   }
@@ -59,7 +59,7 @@ function EmailSection() {
             <label htmlFor='message' className='text-white block text-sm mb-2 font-medium'>
               Message
             </label>
-            <textarea name="message" id="messsage"  className='bg-[#18191E] border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5' placeholder='Hello Caleb, We would like to offer you a position...'/>
+            <textarea name="message" id="message"  className='bg-[#18191E] border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5' placeholder='Hello Caleb, We would like to offer you a position...'/>
           </div>
           <button type='submit' className=' font-medium  py-2.5 px-5 rounded-lg w-full bg-gradient-to-br from-blue-500 via-emerald-500 to bg-pink-500 hover:bg-purple-400 text-black hover:text-white'>Send</button>
           {
