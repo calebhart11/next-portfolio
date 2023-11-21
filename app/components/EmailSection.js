@@ -17,7 +17,7 @@ function EmailSection() {
     const JSONdata = JSON.stringify(data)
     const endpoint = '/api/send'
     const options = {
-      method: POST,
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
