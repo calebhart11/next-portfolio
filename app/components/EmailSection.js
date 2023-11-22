@@ -11,7 +11,7 @@ function EmailSection() {
     e.preventDefault()
     const data = {
       email: e.target.email.value,
-      subject:e.target.subject.value,
+      subject: e.target.subject.value,
       message: e.target.message.value,
     }
     const JSONdata = JSON.stringify(data)

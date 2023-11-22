@@ -3,6 +3,7 @@ import NavBar from './components/NavBar'
 import AboutSection from './components/AboutSection'
 import ProjectsSection from './components/ProjectsSection'
 import EmailSection from './components/EmailSection'
+import { Analytics } from '@vercel/analytics/react'
 import Footer from './components/Footer'
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <AboutSection/>
         <ProjectsSection/>
         <EmailSection/>
+        <Analytics/>
       </div>
       {/* <Footer/> */}
     </main>
